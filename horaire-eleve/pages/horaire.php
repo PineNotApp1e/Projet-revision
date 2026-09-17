@@ -35,10 +35,12 @@ $message = "";
             <div class="mb-3">
                 <label for="classe" class="form-label">Nom du cours :</label>
                 <select class="form-select" name="classe" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <?php 
+                        $i = 0;
+                        foreach ($classes as $key) {
+                            echo "<option ".($i == 0 ? 'selected' : '') ."  value='".$key['id']."'>".$key['nom']."</option>"
+                        }
+                    ?>
                 </select>
             </div>
             <div class="mb-3">
