@@ -16,5 +16,5 @@ Giroud Nathanaël
 - Creneau : [http://localhost/Projet-revision/horaire-eleve/api/creneau](http://localhost/Projet-revision/horaire-eleve/api/creneau).
 
 # Difficulté rencontré
-J'ai eu des difficulter pour commencer l'API et la PDO car j'avais oublier comment faire 
-j'ai aussi eu des probleme avec git
+- J'ai eu des difficulter pour commencer l'API et la PDO car j'avais oublier comment faire 
+- j'ai aussi eu des probleme avec git
