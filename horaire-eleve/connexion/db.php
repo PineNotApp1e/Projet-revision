@@ -1,12 +1,12 @@
 <?php
 
-
+require_once __dir__."/../config/database.php";
 function DbPdo(): PDO
 {
-    $host = 'localhost';
-    $dbname = 'horaire';
-    $username = 'nathanaelgrd';
-    $password = '12awdrg';
+    $host = DB_HOST;
+    $dbname = DB_NAME;
+    $username = DB_USER;
+    $password = DB_PASS;
     try {
 
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
@@ -16,7 +16,7 @@ function DbPdo(): PDO
 
     } catch (PDOException $e) {
 
-        die("Erreur de connexion à la base de données : " . $e->getMessage());
+        die("Erreur de connexion à la base de données : ");
     }
 }
 ?>
