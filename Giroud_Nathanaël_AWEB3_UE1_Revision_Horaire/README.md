@@ -12,9 +12,9 @@ Giroud Nathanaël
 5. Dans config/database changer DB_USER par le votre et DB_PASS par votre mot de passe
 
 # URL des API
-- Cours : [http://localhost/Projet-revision/horaire-eleve/api/cours](http://localhost/Projet-revision/horaire-eleve/api/cours). 
-- Classe : [http://localhost/Projet-revision/horaire-eleve/api/classe](http://localhost/Projet-revision/horaire-eleve/api/classe).
-- Creneau : [http://localhost/Projet-revision/horaire-eleve/api/creneau](http://localhost/Projet-revision/horaire-eleve/api/creneau).
+- Cours : [http://localhost/Giroud_Nathanaël_AWEB3_UE1_Revision_Horaire/horaire-eleve/api/cours](http://localhost/Giroud_Nathanaël_AWEB3_UE1_Revision_Horaire/horaire-eleve/api/cours). 
+- Classe : [http://localhost/Giroud_Nathanaël_AWEB3_UE1_Revision_Horaire/horaire-eleve/api/classe](http://localhost/Giroud_Nathanaël_AWEB3_UE1_Revision_Horaire/horaire-eleve/api/classe).
+- Creneau : [http://localhost/Giroud_Nathanaël_AWEB3_UE1_Revision_Horaire/horaire-eleve/api/creneau](http://localhost/Giroud_Nathanaël_AWEB3_UE1_Revision_Horaire/horaire-eleve/api/creneau).
 
 # Difficulté rencontré
 - J'ai eu des difficulter pour commencer l'API et la PDO car j'avais oublier comment faire 
