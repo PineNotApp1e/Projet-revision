@@ -53,7 +53,7 @@ switch ($endpoint) {
                 }
                 $nom = $data["nom"];
                 $annee = $data["annee"];
-                if (ClasseCreate($nom, $annee) == false) {
+                if (ClasseCreate($nom, $annee) == true) {
                     http_response_code(500);
                     echo json_encode([
                         "erreur" => "serveur",
@@ -93,7 +93,7 @@ switch ($endpoint) {
                 $id = $data["id"];
                 $nom = $data["nom"];
                 $annee = $data["annee"];
-                if (ClasseUpdate($id, $nom, $annee) == false) {
+                if (ClasseUpdate($id, $nom, $annee) == true) {
                     http_response_code(500);
                     echo json_encode([
                         "erreur" => "serveur",
@@ -123,7 +123,7 @@ switch ($endpoint) {
                     exit();
                 }
                 $id = $data["id"];
-                if (ClasseDelete($id) == false) {
+                if (ClasseDelete($id) == true) {
                     http_response_code(500);
                     echo json_encode(
                         [
@@ -169,7 +169,7 @@ switch ($endpoint) {
                 }
                 $nom = $data["nom"];
                 $code = $data["code"];
-                if (CoursCreate($nom, $code) == false) {
+                if (CoursCreate($nom, $code) == true) {
                     http_response_code(500);
                     echo json_encode([
                         "erreur" => "serveur",
@@ -202,7 +202,7 @@ switch ($endpoint) {
                 $id = $data["id"];
                 $nom = $data["nom"];
                 $code = $data["code"];
-                if (CoursUpdate($id, $nom, $code) == false) {
+                if (CoursUpdate($id, $nom, $code) == true) {
                     http_response_code(500);
                     echo json_encode([
                         "erreur" => "serveur",
@@ -233,7 +233,7 @@ switch ($endpoint) {
                     exit();
                 }
                 $id = $data["id"];
-                if (CoursDelete($id) == false) {
+                if (CoursDelete($id) == true) {
                     http_response_code(500);
                     echo json_encode(
                         [
@@ -275,7 +275,7 @@ switch ($endpoint) {
                 $debut = $data["debut"];
                 $fin = $data["fin"];
                 $salle = $data["salle"];
-                if (CreneauxCreate($classeId, $coursId, $jour, $debut, $fin, $salle) == false) {
+                if (CreneauxCreate($classeId, $coursId, $jour, $debut, $fin, $salle) == true) {
                     http_response_code(500);
                     echo json_encode([
                         "erreur" => "serveur",
@@ -312,7 +312,7 @@ switch ($endpoint) {
                 $debut = $data["debut"];
                 $fin = $data["fin"];
                 $salle = $data["salle"];
-                if (CreneauxUpdate($id, $classeId, $coursId, $jour, $debut, $fin, $salle) == false) {
+                if (CreneauxUpdate($id, $classeId, $coursId, $jour, $debut, $fin, $salle) == true) {
                     http_response_code(500);
                     echo json_encode([
                         "erreur" => "serveur",
@@ -343,7 +343,7 @@ switch ($endpoint) {
                     exit();
                 }
                 $id = $data["id"];
-                if (CreneauxDelete($id) == false) {
+                if (CreneauxDelete($id) == true) {
                     http_response_code(500);
                     echo json_encode(
                         [
